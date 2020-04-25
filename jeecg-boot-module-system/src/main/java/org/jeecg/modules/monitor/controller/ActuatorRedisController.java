@@ -40,6 +40,7 @@ public class ActuatorRedisController {
         return Result.ok(infoList);
     }
 
+
     @GetMapping("/keysSize")
     public Map<String, Object> getKeysSize() throws Exception {
         return redisService.getKeysSize();
